@@ -16,7 +16,7 @@ const SplitCarousel = ({slides}) => {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4">
-      <div className="relative overflow-hidden rounded-xl dark:bg-neutral-900">
+      <div className="relative overflow-hidden rounded-xl">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -34,26 +34,26 @@ const SplitCarousel = ({slides}) => {
                 </div>
                 
                 {/* Content Section */}
-                <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col  dark:bg-neutral-900"> {/* Added background color */}
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+                <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col  "> {/* Added background color */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">
                   25 Years of Hope, A Lifetime of Love
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 flex-grow">
+                  <p className="text-gray-600 flex-grow">
                     {slide.content}
                   </p>
 
                   {slide.subContent &&(
                     <div className='mt-3'>
-                     <p className="text-gray-600 dark:text-gray-300 flex-grow">
+                     <p className="text-gray-600 flex-grow">
                     {slide.subContent}
                   </p>
-                     <p className="text-gray-600 dark:text-gray-300 flex-grow mt-3 mb-3">
+                     <p className="text-gray-600 flex-grow mt-3 mb-3">
                     {slide.wish}
                   </p>
                     </div>
                   )}
                  
-                  <p className="text-gray-600 dark:text-gray-300 flex-grow">
+                  <p className="text-gray-600  flex-grow">
                     {slide.name}
                   </p>
                 </div>
@@ -74,8 +74,8 @@ const SplitCarousel = ({slides}) => {
                 onClick={() => setCurrentSlide(index)}
                 className={`w-2 h-2 rounded-full transition-colors ${
                   currentSlide === index
-                    ? 'bg-blue-600 dark:bg-blue-500'
-                    : 'bg-gray-300 dark:bg-gray-600'
+                    ? 'bg-blue-600 '
+                    : 'bg-gray-300 '
                 }`}
               />
             ))}
@@ -84,13 +84,13 @@ const SplitCarousel = ({slides}) => {
       </div>
       <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/4 lg:top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 shadow-lg hover:bg-white dark:bg-neutral-800/80 dark:hover:bg-neutral-800"
+          className="absolute left-4 top-1/4 lg:top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 shadow-lg hover:bg-white"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/4 lg:top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 shadow-lg hover:bg-white dark:bg-neutral-800/80 dark:hover:bg-neutral-800"
+          className="absolute right-0 top-1/4 lg:top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 shadow-lg hover:bg-white"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
