@@ -637,7 +637,7 @@ const FertilityClinicHero = () => {
       </div>
 
 
-      <div className="main  container mx-auto mb-8">
+      <div className="main  container mx-auto mb-8 xl:px-32">
         <div className="">
           <JoinTeam/>
         </div>
