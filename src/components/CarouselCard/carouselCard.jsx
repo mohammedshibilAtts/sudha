@@ -35,25 +35,25 @@ const SplitCarousel = ({slides}) => {
                 
                 {/* Content Section */}
                 <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col  "> {/* Added background color */}
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-xl font-bold text-black mb-4">
                   25 Years of Hope, A Lifetime of Love
                   </h3>
-                  <p className="text-gray-600 flex-grow">
+                  <p className="text-black flex-grow">
                     {slide.content}
                   </p>
 
                   {slide.subContent &&(
                     <div className='mt-3'>
-                     <p className="text-gray-600 flex-grow">
+                     <p className="text-black flex-grow">
                     {slide.subContent}
                   </p>
-                     <p className="text-gray-600 flex-grow mt-3 mb-3">
+                     <p className="text-black flex-grow mt-3 mb-3">
                     {slide.wish}
                   </p>
                     </div>
                   )}
                  
-                  <p className="text-gray-600  flex-grow">
+                  <p className="text-black  flex-grow">
                     {slide.name}
                   </p>
                 </div>

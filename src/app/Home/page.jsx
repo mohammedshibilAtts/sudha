@@ -120,11 +120,11 @@ const TestimonialCard = () => {
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
             ))}
-            <span className="text-gray-500 text-sm ml-2">1 month ago</span>
+            <span className="text-black text-sm ml-2">1 month ago</span>
           </div>
         </div>
       </div>
-      <p className="mt-4 text-gray-600 text-sm">
+      <p className="mt-4 text-black text-sm">
         I have been married for 3 years and was trying to get pregnant, but all
         our efforts failed. Later, I heard about Sudha Fertility Centre,
         Bangalore and visited the centre five months back. The doctor explained
@@ -165,14 +165,14 @@ const FertilityClinicHero = () => {
               {/* Left section - Heading and Review */}
               <div className="space-y-8">
                 <div>
-                  <h1 className="text-4xl font-bold text-gray-900 leading-tight mb-4">
+                  <h1 className="text-4xl font-bold text-black leading-tight mb-4">
                     Turning Dreams of Parenthood{" "}
                     <span className="xl:block">
                       into Reality for{" "}
                       <span className="text-blue-600">40 Years</span>{" "}
                     </span>{" "}
                   </h1>
-                  <p className="text-xl text-gray-600 italic">
+                  <p className="text-xl text-black italic">
                     "Cherish the Boon of Motherhood"
                   </p>
                 </div>
@@ -183,7 +183,7 @@ const FertilityClinicHero = () => {
 
                   <button className="absolute -left-4 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50">
                     <svg
-                      className="w-6 h-6 text-gray-600"
+                      className="w-6 h-6 text-black"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -200,7 +200,7 @@ const FertilityClinicHero = () => {
 
                   <button className="absolute -right-4 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50">
                     <svg
-                      className="w-6 h-6 text-gray-600"
+                      className="w-6 h-6 text-black"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -241,7 +241,7 @@ const FertilityClinicHero = () => {
 
       <div className="main bg-[#F0F5FF]">
         <div className="container mx-auto pt-10  px-4 py-16 sm:px-6 lg:px-8">
-          <div className="Heading flex justify-center text-4xl  text-gray-900 leading-tight mb-4">
+          <div className="Heading flex justify-center text-4xl  text-black leading-tight mb-4">
             <h1>Happy Parenthood Stories from Sudha Parents</h1>
           </div>
           <div className="carousel ">
@@ -251,9 +251,9 @@ const FertilityClinicHero = () => {
       </div>
 
       {/* The Soul of Our Mission to Help Couples Achieve Parenthood */}
-      <div className="main">
+      <div className="main ">
         <div className="container mx-auto pt-10 px-4 py-16 sm:px-6 lg:px-8">
-          <div className="Heading flex justify-center text-4xl text-gray-900 leading-tight mb-4">
+          <div className="Heading flex justify-center text-4xl text-black leading-tight mb-4">
             <h1>The Soul of Our Mission to Help Couples Achieve Parenthood</h1>
           </div>
           <div className="content flex justify-center">
@@ -281,7 +281,7 @@ const FertilityClinicHero = () => {
 
           {/* Text content below the video */}
           <div className="content mt-8 text-center xl:px-40">
-            <p className="text-gray-600 text-md">
+            <p className="text-black text-md">
               The journey of Sudha Fertility Centre began with a heartfelt
               mission to help couples achieve parenthood by empathizing with the
               pain and emotions they face daily amid societal pressures. Dr. S.
@@ -296,7 +296,7 @@ const FertilityClinicHero = () => {
 
       <div className="main">
         <div className="container mx-auto pt-10 px-4 py-16 sm:px-6 xl:px-32">
-          <div className="Heading flex justify-center text-4xl text-gray-900 leading-tight mb-4">
+          <div className="Heading flex justify-center text-4xl text-black leading-tight mb-4">
             <h1>Why choose us? </h1>
           </div>
 
@@ -317,7 +317,7 @@ const FertilityClinicHero = () => {
                       <h1 className="text-xl font-semibold">1L+ Babies</h1>
                     </div>
                     <div className="des">
-                      <p className="text-gray-700">Healthy Babies</p>
+                      <p className="text-black">Healthy Babies</p>
                     </div>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ const FertilityClinicHero = () => {
                       <h1 className="text-xl font-semibold">40+</h1>
                     </div>
                     <div className="des">
-                      <p className="text-gray-700">Years of Experience</p>
+                      <p className="text-black">Years of Experience</p>
                     </div>
                   </div>
                 </div>
@@ -359,7 +359,7 @@ const FertilityClinicHero = () => {
                       <h1 className="text-xl font-semibold">100+</h1>
                     </div>
                     <div className="des">
-                      <p className="text-gray-700">
+                      <p className="text-black">
                         Eminent fertility specialists
                       </p>
                     </div>
@@ -378,7 +378,7 @@ const FertilityClinicHero = () => {
                       <h1 className="text-xl font-semibold">20+</h1>
                     </div>
                     <div className="des">
-                      <p className="text-gray-700">Branches</p>
+                      <p className="text-black">Branches</p>
                     </div>
                   </div>
                 </div>
@@ -391,7 +391,7 @@ const FertilityClinicHero = () => {
                   <h1 className="text-[#173366] text-2xl font-bold">
                     1 Lakh+ Healthy Babies
                   </h1>
-                  <p className="text-md mt-2">
+                  <p className="text-md mt-2 ">
                     As a leading fertility hospital in South India, Sudha
                     Fertility Centre serves as a beacon of hope and brings
                     happiness to families. With experienced fertility doctors
@@ -509,10 +509,10 @@ const FertilityClinicHero = () => {
               <div className="flex flex-col md:flex-row items-center p-8 ">
                 {/* Left side with title */}
                 <div className="md:w-2/4 mb-8 md:mb-0">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+                  <h2 className="text-3xl font-bold text-black mb-4 text-center">
                     Our Achievements
                   </h2>
-                  <p className="text-gray-600 text-center">
+                  <p className="text-black text-center">
                     Driven by the happiness of thousands of families.
                   </p>
                 </div>
@@ -530,10 +530,10 @@ const FertilityClinicHero = () => {
                           />
                         </div>
                         <div>
-                          <div className="text-xl font-bold text-gray-800">
+                          <div className="text-xl font-bold text-black">
                             {achievement.number}
                           </div>
-                          <div className="text-sm text-gray-600">
+                          <div className="text-sm text-black">
                             {achievement.description}
                           </div>
                         </div>
@@ -551,11 +551,11 @@ const FertilityClinicHero = () => {
 
       <div className="main ">
         <div className="container mx-auto pt-10  px-4 py-16 sm:px-6 lg:px-8">
-          <div className="Heading flex justify-center text-4xl  text-gray-900 leading-tight mb-4">
+          <div className="Heading flex justify-center text-4xl  text-black leading-tight mb-4">
             <h1>Treatments</h1>
           </div>
           <div className="content xl:px-64 text-center">
-            <h1>
+            <h1 className="text-black">
               Begin your parenthood journey guided by the best fertility
               specialists in India with world-class fertility treatments. With
               decades of expertise and excellence, we empathize with the
@@ -571,10 +571,10 @@ const FertilityClinicHero = () => {
                 <Image src={IVF} alt="IVF Icon" />
               </div>
               <div className="title text-center mt-4">
-                <h1 className="text-xl font-semibold">IVF</h1>
+                <h1 className="text-xl font-semibold text-black">IVF</h1>
               </div>
               <div className="desc text-center mt-3 pb-9">
-                <p className="text-gray-700">
+                <p className="text-black">
                   In vitro fertilization (IVF) is one of the well-known and most
                   successful fertility treatments preferred for couples with
                   complicated fertility problems.
@@ -591,10 +591,10 @@ const FertilityClinicHero = () => {
                 <Image src={ICSI} alt="ICSI Icon" />
               </div>
               <div className="title text-center mt-4">
-                <h1 className="text-xl font-semibold">ICSI</h1>
+                <h1 className="text-xl font-semibold text-black">ICSI</h1>
               </div>
               <div className="desc text-center mt-3 pb-9">
-                <p className="text-gray-700">
+                <p className="text-black">
                   Intracytoplasmic Sperm Injection (ICSI) is a type of assisted
                   reproductive technology that involves injecting the male sperm
                   directly into the egg’s cytoplasm.
@@ -611,10 +611,10 @@ const FertilityClinicHero = () => {
                 <Image src={IVF} alt="Laparoscopic Icon" />
               </div>
               <div className="title text-center mt-4">
-                <h1 className="text-xl font-semibold">Laparoscopic</h1>
+                <h1 className="text-xl font-semibold text-black">Laparoscopic</h1>
               </div>
               <div className="desc text-center mt-3 pb-9">
-                <p className="text-gray-700">
+                <p className="text-black">
                   Laparoscopy is a minimally invasive procedure performed to
                   examine the stomach or pelvis. In this process, a thin lighted
                   tube with a video camera is inserted with a tiny incision.
@@ -631,10 +631,10 @@ const FertilityClinicHero = () => {
                 <Image src={Hysteroscopy} alt="Hysteroscopy Icon" />
               </div>
               <div className="title text-center mt-4">
-                <h1 className="text-xl font-semibold">Hysteroscopy</h1>
+                <h1 className="text-xl font-semibold text-black">Hysteroscopy</h1>
               </div>
               <div className="desc text-center mt-3 pb-9">
-                <p className="text-gray-700">
+                <p className="text-black">
                   Hysteroscopy is a procedure used to examine the inside of the
                   uterus.
                 </p>
@@ -650,10 +650,10 @@ const FertilityClinicHero = () => {
                 <Image src={Male} alt="Male Infertility Icon" />
               </div>
               <div className="title text-center mt-4">
-                <h1 className="text-xl font-semibold">Male Infertility</h1>
+                <h1 className="text-xl font-semibold text-black">Male Infertility</h1>
               </div>
               <div className="desc text-center mt-3 pb-9">
-                <p className="text-gray-700">
+                <p className="text-black">
                   Male infertility involves the inability of a man to fertilize
                   an egg.
                 </p>
@@ -678,10 +678,10 @@ const FertilityClinicHero = () => {
       <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   {/* Title */}
   <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight">
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-black">
       Your questions, answered
     </h2>
-    <p className="mt-1 text-gray-600">
+    <p className="mt-1 text-black">
       Answers to the most frequently asked questions.
     </p>
   </div>
@@ -696,14 +696,14 @@ const FertilityClinicHero = () => {
           className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6"
         >
           <button
-            className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 "
+            className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-black rounded-lg transition hover:text-black focus:outline-none focus:text-black "
             onClick={() => toggleFaq(index)}
             aria-expanded={openIndex === index ? "true" : "false"}
             aria-controls={`hs-collapse-${index}`}
           >
             {faq.question}
             <svg
-              className={`hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500${
+              className={`hs-accordion-active:hidden block shrink-0 size-5 text-black group-hover:text-black${
                 openIndex === index ? "hidden" : "block"
               }`}
               xmlns="http://www.w3.org/2000/svg"
@@ -719,7 +719,7 @@ const FertilityClinicHero = () => {
               <path d="m6 9 6 6 6-6" />
             </svg>
             <svg
-              className={`hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500${
+              className={`hs-accordion-active:block hidden shrink-0 size-5 text-black group-hover:text-black${
                 openIndex === index ? "block" : "hidden"
               }`}
               xmlns="http://www.w3.org/2000/svg"
@@ -743,7 +743,7 @@ const FertilityClinicHero = () => {
             role="region"
             aria-labelledby={`hs-collapse-${index}`}
           >
-            <p className="text-gray-800">{faq.answer}</p>
+            <p className="text-black">{faq.answer}</p>
           </div>
         </div>
       ))}

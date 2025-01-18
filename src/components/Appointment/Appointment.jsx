@@ -21,10 +21,10 @@ const AppointmentForm = () => {
           {/* Left Column - Contact Info */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-[32px] font-bold text-gray-900 mb-2">
+              <h2 className="text-[32px] font-bold text-black mb-2">
                 Book your Free Appointment
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-black text-lg">
                 Take the first step towards your parenthood journey.
               </p>
             </div>
@@ -46,10 +46,10 @@ const AppointmentForm = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                  <p className="text-xs text-black uppercase tracking-wider">
                     CALL
                   </p>
-                  <p className="text-gray-900">9874651230</p>
+                  <p className="text-black">9874651230</p>
                 </div>
               </div>
 
@@ -69,16 +69,16 @@ const AppointmentForm = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                  <p className="text-xs text-black uppercase tracking-wider">
                     EMAIL US
                   </p>
-                  <p className="text-gray-900">info@gmail.com</p>
+                  <p className="text-black">info@gmail.com</p>
                 </div>
               </div>
             </div>
 
             <div className="space-y-3">
-              <p className="text-sm text-gray-500">Connect with us:</p>
+              <p className="text-sm text-black">Connect with us:</p>
               <div className="flex gap-3">
                 {[
                   { name: "facebook", icon: fb },
@@ -106,7 +106,7 @@ const AppointmentForm = () => {
 
           {/* Right Column - Form */}
           <div className="rounded-3xl shadow-xl p-8 bg-white z-30 relative">
-            <h3 className="text-xl font-semibold text-gray-900 mb-8">
+            <h3 className="text-xl font-semibold text-black mb-8">
               Ready to Start Your Journey to Meet Your Little One?
             </h3>
 
@@ -114,7 +114,7 @@ const AppointmentForm = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm text-gray-700 mb-1"
+                  className="block text-sm text-black mb-1"
                 >
                   Name
                 </label>
@@ -129,7 +129,7 @@ const AppointmentForm = () => {
               <div>
                 <label
                   htmlFor="mobile"
-                  className="block text-sm text-gray-700 mb-1"
+                  className="block text-sm text-black mb-1"
                 >
                   Mobile Number
                 </label>
@@ -144,7 +144,7 @@ const AppointmentForm = () => {
               <div>
                 <label
                   htmlFor="location"
-                  className="block text-sm text-gray-700 mb-1"
+                  className="block text-sm text-black mb-1"
                 >
                   Location
                 </label>
@@ -159,7 +159,7 @@ const AppointmentForm = () => {
               <div>
                 <label
                   htmlFor="branch"
-                  className="block text-sm text-gray-700 mb-1"
+                  className="block text-sm text-black mb-1"
                 >
                   Select Branch
                 </label>
@@ -167,7 +167,7 @@ const AppointmentForm = () => {
                   <select
                     id="branch"
                     defaultValue=""
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-1 focus:ring-gray-300 focus:border-gray-300 outline-none appearance-none text-gray-500"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-1 focus:ring-gray-300 focus:border-gray-300 outline-none appearance-none text-black"
                   >
                     <option value="" disabled>
                       Select Branch
@@ -177,7 +177,7 @@ const AppointmentForm = () => {
                   </select>
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                     <svg
-                      className="w-5 h-5 text-gray-400"
+                      className="w-5 h-5 text-black"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
