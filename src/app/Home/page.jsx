@@ -281,7 +281,7 @@ const FertilityClinicHero = () => {
 
           {/* Text content below the video */}
           <div className="content mt-8 text-center xl:px-40">
-            <p className="text-gray-600 dark:text-gray-300 text-md">
+            <p className="text-gray-600 text-md">
               The journey of Sudha Fertility Centre began with a heartfelt
               mission to help couples achieve parenthood by empathizing with the
               pain and emotions they face daily amid societal pressures. Dr. S.
@@ -678,10 +678,10 @@ const FertilityClinicHero = () => {
       <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   {/* Title */}
   <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight">
       Your questions, answered
     </h2>
-    <p className="mt-1 text-gray-600 dark:text-neutral-400">
+    <p className="mt-1 text-gray-600">
       Answers to the most frequently asked questions.
     </p>
   </div>
@@ -693,17 +693,17 @@ const FertilityClinicHero = () => {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10"
+          className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6"
         >
           <button
-            className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400"
+            className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 "
             onClick={() => toggleFaq(index)}
             aria-expanded={openIndex === index ? "true" : "false"}
             aria-controls={`hs-collapse-${index}`}
           >
             {faq.question}
             <svg
-              className={`hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400 ${
+              className={`hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500${
                 openIndex === index ? "hidden" : "block"
               }`}
               xmlns="http://www.w3.org/2000/svg"
@@ -719,7 +719,7 @@ const FertilityClinicHero = () => {
               <path d="m6 9 6 6 6-6" />
             </svg>
             <svg
-              className={`hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400 ${
+              className={`hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500${
                 openIndex === index ? "block" : "hidden"
               }`}
               xmlns="http://www.w3.org/2000/svg"
@@ -743,7 +743,7 @@ const FertilityClinicHero = () => {
             role="region"
             aria-labelledby={`hs-collapse-${index}`}
           >
-            <p className="text-gray-800 dark:text-neutral-200">{faq.answer}</p>
+            <p className="text-gray-800">{faq.answer}</p>
           </div>
         </div>
       ))}
