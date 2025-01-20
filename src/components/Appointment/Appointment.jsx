@@ -10,11 +10,8 @@ const AppointmentForm = () => {
   return (
     <div
       className="py-16 bg-cover bg-center"
-      style={{
-        backgroundImage:
-          "url(https://sudhafertilitycentre.com/testing.sudhafertilitycentre.com/public/assets/img/Contact.png)",
-        position: "relative",
-      }}
+     
+      style={{"background":"linear-gradient(170deg, #F0F5FF, #F0F5FF 60%, white 60%, white)"}}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="grid lg:grid-cols-2 gap-16 items-start">

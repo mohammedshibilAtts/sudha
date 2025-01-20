@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react'
 
 function Navbar() {
@@ -84,7 +85,7 @@ function Navbar() {
           {/* Mobile menu button */}
           <button 
             type="button" 
-            className="xl:hidden inline-flex items-center justify-center p-2 rounded-md  hover:text-[#173366] focus:outline-none"
+            className="xl:hidden text-black inline-flex items-center justify-center p-2 rounded-md  hover:text-[#173366] focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
           >
@@ -103,8 +104,8 @@ function Navbar() {
           {/* Navigation Items - Center */}
           <div className="hidden xl:flex xl:items-center xl:justify-center flex-1 mx-8">
             <div className="flex items-center space-x-7">
-              <a href="/" className={'hover:text-[#173366]  font-medium'}>Home</a>
-              <a href="/about" className=" hover:text-[#173366] font-medium">About Us</a>
+              <Link href="/" className={'hover:text-[#173366]  font-medium'}>Home</Link>
+              <Link href="/about" className=" hover:text-[#173366] font-medium">About Us</Link>
               
               {/* Treatments Dropdown */}
               <div className="relative group">
@@ -117,13 +118,13 @@ function Navbar() {
                 <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <div className="py-2">
                     {treatments.map((treatment, index) => (
-                      <a
+                      <Link
                         key={index}
                         href={`/treatments/${treatment.toLowerCase().replace(/\s+/g, '-')}`}
                         className="block px-4 py-2 text-sm  hover:bg-blue-50 hover:text-[#173366]"
                       >
                         {treatment}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -141,7 +142,7 @@ function Navbar() {
                   <div className="py-2">
                     {branches.map((branch, index) => (
                       <div key={index} className="group/sub relative">
-                        <a
+                        <Link
                           href={`/branches/${branch.city.toLowerCase()}`}
                           className="block px-4 py-2 text-sm  hover:bg-blue-50 hover:text-[#173366] flex justify-between items-center"
                         >
@@ -149,17 +150,17 @@ function Navbar() {
                           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
-                        </a>
+                        </Link>
                         <div className="absolute left-full top-0 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 -ml-2">
                           <div className="py-2">
                             {branch.locations.map((location, locationIndex) => (
-                              <a
+                              <Link
                                 key={locationIndex}
                                 href={`/branches/${branch.city.toLowerCase()}/${location.toLowerCase().replace(/\s+/g, '-')}`}
                                 className="block px-4 py-2 text-sm  hover:bg-blue-50 hover:text-[#173366]"
                               >
                                 {location}
-                              </a>
+                              </Link>
                             ))}
                           </div>
                         </div>
@@ -169,17 +170,17 @@ function Navbar() {
                 </div>
               </div>
 
-              <a href="/gallery" className=" hover:text-[#173366] font-medium">Gallery</a>
-              <a href="/international" className=" hover:text-[#173366] font-medium">International Patients</a>
-              <a href="/contact" className=" hover:text-[#173366] font-medium">Contact Us</a>
+              <Link href="/gallery" className=" hover:text-[#173366] font-medium">Gallery</Link>
+              <Link href="/international" className=" hover:text-[#173366] font-medium">International Patients</Link>
+              <Link href="/contact" className=" hover:text-[#173366] font-medium">Contact Us</Link>
             </div>
           </div>
 
           {/* Book Appointment Button - Right */}
           <div className="hidden xl:block flex-shrink-0">
-            <a href="/book-appointment" className="inline-flex items-center justify-center px-4 py-2 border border-[#173366] rounded-md text-[#173366] bg-white hover:bg-[#173366] hover:text-white font-medium transition-colors whitespace-nowrap">
+            <Link href="/book-appointment" className="inline-flex items-center justify-center px-4 py-2 border border-[#173366] rounded-md text-[#173366] bg-white hover:bg-[#173366] hover:text-white font-medium transition-colors whitespace-nowrap">
               BOOK A FREE APPOINTMENT
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -187,8 +188,8 @@ function Navbar() {
         <div className={`xl:hidden fixed inset-0 top-20 bg-white transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="h-full overflow-y-auto pb-20">
             <div className="flex flex-col space-y-4 px-4 pt-4">
-              <a href="/" className="text-[#173366] font-medium py-2">Home</a>
-              <a href="/about" className=" hover:text-[#173366] font-medium py-2">About Us</a>
+              <Link href="/" className="text-[#173366] font-medium py-2">Home</Link>
+              <Link href="/about" className=" hover:text-[#173366] font-medium py-2">About Us</Link>
               
               {/* Mobile Treatments */}
               <div className="border-b border-gray-200">
@@ -203,13 +204,13 @@ function Navbar() {
                 </button>
                 <div className={`pl-4 space-y-2 transition-all duration-300 ${activeMobileSubmenu === 'treatments' ? 'max-h-96 py-2' : 'max-h-0 overflow-hidden'}`}>
                   {treatments.map((treatment, index) => (
-                    <a
+                    <Link
                       key={index}
                       href={`/treatments/${treatment.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="block py-2 text-gray-600 hover:text-[#173366] text-sm"
+                      className="block py-2 text-black hover:text-[#173366] text-sm"
                     >
                       {treatment}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -239,13 +240,13 @@ function Navbar() {
                       </button>
                       <div className={`pl-4 space-y-2 transition-all duration-300 ${activeMobileBranch === branch.city ? 'max-h-48 py-2' : 'max-h-0 overflow-hidden'}`}>
                         {branch.locations.map((location, locationIndex) => (
-                          <a
+                          <Link
                             key={locationIndex}
                             href={`/branches/${branch.city.toLowerCase()}/${location.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="block py-2 text-gray-600 hover:text-[#173366] text-sm"
+                            className="block py-2 text-black hover:text-[#173366] text-sm"
                           >
                             {location}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -253,13 +254,13 @@ function Navbar() {
                 </div>
               </div>
 
-              <a href="/gallery" className=" hover:text-[#173366] font-medium py-2">Gallery</a>
-              <a href="/international" className=" hover:text-[#173366] font-medium py-2">International Patients</a>
-              <a href="/contact" className=" hover:text-[#173366] font-medium py-2">Contact Us</a>
+              <Link href="/gallery" className=" hover:text-[#173366] font-medium py-2">Gallery</Link>
+              <Link href="/international" className=" hover:text-[#173366] font-medium py-2">International Patients</Link>
+              <Link href="/contact" className=" hover:text-[#173366] font-medium py-2">Contact Us</Link>
               
-              <a href="/book-appointment" className="inline-flex items-center justify-center px-4 py-2 border border-[#173366] rounded-md text-[#173366] bg-white hover:bg-[#173366] hover:text-white font-medium transition-colors">
+              <Link href="/book-appointment" className="inline-flex items-center justify-center px-4 py-2 border border-[#173366] rounded-md text-[#173366] bg-white hover:bg-[#173366] hover:text-white font-medium transition-colors">
                 BOOK A FREE APPOINTMENT
-              </a>
+              </Link>
             </div>
           </div>
         </div>
