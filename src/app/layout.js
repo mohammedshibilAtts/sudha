@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import PrelineScript from "@/components/pipe/pipe";
+import PrelineScript from "@/components/preline/preline";
 import Navbar from "@/components/common/header/navbar";
 
 const geistSans = Geist({

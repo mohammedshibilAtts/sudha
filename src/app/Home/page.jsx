@@ -22,6 +22,7 @@ import Hysteroscopy from "@/assets/Home/Hysteroscopy.svg";
 import Male from "@/assets/Home/Male.svg";
 import Button from "@/components/button/button";
 import JoinTeam from "@/components/join-our-team/join-our-team";
+import BackgroundBanner from "@/assets/Home/BackgroundBanner.webp"
 
 const slides = [
   {
@@ -154,7 +155,7 @@ const FertilityClinicHero = () => {
         className="relative bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(https://sudhafertilitycentre.com/testing.sudhafertilitycentre.com/public/assets/img/banner/banner.png)",
+            `url(${BackgroundBanner.src})`,
         }}
       >
         <div className="container mx-auto">
@@ -180,7 +181,7 @@ const FertilityClinicHero = () => {
                 <div className="relative">
                   <TestimonialCard />
 
-                  <button className="absolute -left-4 top-1/2 transform -translate-y-1/2 p-2 bg-black rounded-full shadow-lg hover:bg-gray-50">
+                  <button className="absolute -left-4 top-1/2 transform -translate-y-1/2 p-2 bg-black hover:bg-[#292828] rounded-full shadow-lg">
                     <svg
                       className="w-6 h-6 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +198,7 @@ const FertilityClinicHero = () => {
                     </svg>
                   </button>
 
-                  <button className="absolute -right-4 top-1/2 transform -translate-y-1/2 p-2 bg-black rounded-full shadow-lg hover:bg-gray-50">
+                  <button className="absolute -right-4 top-1/2 transform -translate-y-1/2 p-2 bg-black hover:bg-[#292828] rounded-full shadow-lg">
                     <svg
                       className="w-6 h-6 text-white"
                       xmlns="http://www.w3.org/2000/svg"

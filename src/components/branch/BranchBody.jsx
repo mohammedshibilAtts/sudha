@@ -259,7 +259,7 @@ function BranchBody() {
                   />
                 </div>
 
-                <div className="content flex-1 pt-4 px-4">
+                <div className="content flex-1  px-4">
                   <h3 className="text-[#0B63E5] text-xl sm:text-2xl">
                     Facilities
                   </h3>
@@ -381,7 +381,7 @@ function BranchBody() {
       {/* Gallery */}
       <div ref={(el) => (sectionRefs.current["gallery"] = el)} id="gallery">
         <div className="container mx-auto sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto  pb-5">
+          <div className="max-w-max mx-auto  pb-5">
             <Gallery
               slides={[
                 { image: Doc },
@@ -400,6 +400,9 @@ function BranchBody() {
           </div>
         </div>
       </div>
+
+
+      {/* faqs */}
 
       <div ref={(el) => (sectionRefs.current["faqs"] = el)} id="faqs">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

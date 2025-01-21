@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-function Breadcrumbs({ BranchName }) {
+function Breadcrumbs({data}) {
   return (
     <div className="container mx-auto">
       <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
@@ -24,9 +24,9 @@ function Breadcrumbs({ BranchName }) {
             </svg>
             <Link
               className="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-              href="/"
+              href={data[0].link}
             >
-              Home
+              {data[0].title}
             </Link>
             <svg
               className="shrink-0 mx-2 size-4 text-gray-400 "
@@ -44,11 +44,8 @@ function Breadcrumbs({ BranchName }) {
             </svg>
           </li>
           <li className="inline-flex items-center">
-            <Link
-              className="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-              href="/"
-            >
-              Branch
+           
+              {data[1].title}
               <svg
                 className="shrink-0 mx-2 size-4 text-gray-400"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,13 +60,12 @@ function Breadcrumbs({ BranchName }) {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-            </Link>
           </li>
           <li
             className="inline-flex items-center text-sm font-semibold text-gray-800 truncate"
             aria-current="page"
           >
-            {BranchName}
+            {data[2].title}
           </li>
         </ol>
       </div>

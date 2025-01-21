@@ -8,6 +8,7 @@ const Gallery = () => {
   const scrollContainerRef = useRef(null);
 
   const images = [
+    
     {
       src: Doc,
       alt: 'Staff members standing together with rangoli decoration',
@@ -52,7 +53,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="max-w-max mx-auto p-8">
       {/* Header Section */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-4">Gallery</h2>
@@ -76,13 +77,13 @@ const Gallery = () => {
         {/* Scrollable Container */}
         <div 
           ref={scrollContainerRef}
-          className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide scroll-smooth"
+          className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide scroll-smooth justify-center"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-none w-72 relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105"
+              className="flex-none w-96 relative bg-white  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105"
               onClick={() => handleCardClick(index)}
             >
               <div className="relative w-full h-64">
